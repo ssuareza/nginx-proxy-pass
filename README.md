@@ -22,7 +22,7 @@ docker run -d -p 80:80 -e TARGET=http://192.168.8.15:8080 ssuareza/nginx-proxy-p
 
 ## Use authentication
 
-Just mount a htpassword file. Example:
+Just mount a htpasswd file. Example:
 
 ```sh
 docker run -d -p 80:80 \
@@ -31,7 +31,7 @@ docker run -d -p 80:80 \
   ssuareza/nginx-proxy-pass
 ```
 
-To create a htpassword run:
+To create a htpasswd file run:
 
 ```sh
 htpasswd -c .htpasswd user1
